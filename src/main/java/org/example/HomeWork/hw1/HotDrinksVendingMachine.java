@@ -43,45 +43,4 @@ public class HotDrinksVendingMachine implements VendingMachine {
         }
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }
-
-
-
-
-
-
-/**
- * //    public HotDrinksVendingMachine(ArrayList<HotDrink> list) {
- * //        this.list = list;
- * //    }
-    public ArrayList getDrinkByName(String searchName) {
-        ArrayList<HotDrink> result = new ArrayList<>();
-        for (HotDrink item : list) {
-            if (item.getName().contains(searchName)) {
-                result.add(item);
-            }
-        }
-        return result;
-    }
-
-    public ArrayList getDrinkByVolume(Double searchVolume) {
-        ArrayList<HotDrink> result = new ArrayList<>();
-        for (HotDrink item : list) {
-            if (item.getVolume().equals(searchVolume)) {
-                result.add(item);
-            }
-        }
-        return result;
-    }
-
-    public ArrayList getDrinkByTemperature(Double searchTemperature) {
-        ArrayList<HotDrink> result = new ArrayList<>();
-        for (HotDrink item : list) {
-            if (item.getTemperature().equals(searchTemperature)) {
-                result.add(item);
-            }
-        }
-        return result;
-    }
-
-**/
 }
