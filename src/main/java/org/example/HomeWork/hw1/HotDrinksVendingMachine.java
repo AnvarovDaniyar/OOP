@@ -7,13 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HotDrinksVendingMachine implements VendingMachine {
-    private ArrayList<HotDrink> list;
-    private List<Drink> list2;
+//    private ArrayList<HotDrink> list;
+    private final List<Drink> list2;
 
-
-    public HotDrinksVendingMachine(ArrayList<HotDrink> list) {
-        this.list = list;
+    public void addDrink(HotDrink newDrink) {
+        list2.add(newDrink);
     }
+
+
     public HotDrinksVendingMachine(List<Drink> list2) {
         this.list2 = list2;
     }
@@ -45,14 +46,13 @@ public class HotDrinksVendingMachine implements VendingMachine {
 
 
 
- public HotDrinksVendingMachine() {
-        list = new ArrayList<HotDrink>();
-    }
 
-    public void addDrink(HotDrink newDrink) {
-        list.add(newDrink);
-    }
 
+
+/**
+ * //    public HotDrinksVendingMachine(ArrayList<HotDrink> list) {
+ * //        this.list = list;
+ * //    }
     public ArrayList getDrinkByName(String searchName) {
         ArrayList<HotDrink> result = new ArrayList<>();
         for (HotDrink item : list) {
@@ -83,5 +83,5 @@ public class HotDrinksVendingMachine implements VendingMachine {
         return result;
     }
 
-
+**/
 }
