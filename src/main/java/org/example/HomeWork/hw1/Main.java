@@ -10,13 +10,14 @@ package org.example.HomeWork.hw1;
 public class Main {
     public static void main(String[] args) {
         HotDrinksVendingMachine machine = new HotDrinksVendingMachine();
-        machine.addDrink(new HotDrink("coffe", 0.3, 70.0));
+        machine.addDrink(new HotDrink("coffee", 0.3, 70.0));
         machine.addDrink(new HotDrink("milk", 0.5, 43.7));
         machine.addDrink(new HotDrink("cappuccino", 0.3, 55.5));
         machine.addDrink(new HotDrink("tea", 0.5, 55.5));
 
-        System.out.println(machine.getDrinkByName("tea"));
-        System.out.println(machine.getDrinkByVolume(0.3));
-        System.out.println(machine.getDrinkByTemperature(43.7));
+        //System.out.println(machine.getDrinkByName("tea"));
+        //System.out.println(machine.getDrinkByVolume(0.3));
+        //System.out.println(machine.getDrinkByTemperature(43.7));
+        System.out.println(machine.getProducts("coffee", 0.3, 70.0));
     }
 }
