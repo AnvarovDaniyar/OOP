@@ -22,7 +22,7 @@ public class Main {
 //        machine.addDrink(new HotDrink("cappuccino", 0.3, 55.5));
 //        machine.addDrink(new HotDrink("tea", 0.5, 55.5));
 
-        HotDrink hotDrink = machine.getProducts("coffee", 0.3, 70.0);
+ //       HotDrink hotDrink = machine.getProducts("coffee", 0.3, 70.0);
 
 
         System.out.println(machine.getProducts("coffee", 0.3, 70.0));
