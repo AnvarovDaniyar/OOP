@@ -5,9 +5,6 @@ public class BankService{
 
     private double balance;
 
-//    public BankService(double balance) {
-//        this.balance = balance;
-//    }
 
     public void deposit(double sum) {
         balance += sum;

@@ -18,7 +18,7 @@ public class UserView {
         User user1 = new User(3, "name_3", 38, 1000.0);
         userController.addUserToRepo(user1);
         bankController.deposit(scanner.nextDouble());
-        bankController.withdraw(user1);
+        bankController.withdraw(user1.getBalance());
         bankController.getBalance(user1);
         System.out.println(userController.getUser(user1));
         userController.deleteUser(user1);

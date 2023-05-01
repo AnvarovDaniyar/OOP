@@ -8,8 +8,8 @@ public class BankController {
     public void deposit(Double sum) {
         bankService.deposit(sum);
     }
-    public void withdraw(User user){
-        bankService.withdraw(user.getBalance());
+    public void withdraw(Double sum){
+        bankService.withdraw(sum);
     }
     public double getBalance(User user) {
        return bankService.getBalance();
